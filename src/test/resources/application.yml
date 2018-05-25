@@ -7,3 +7,9 @@ spring:
   profiles: dev
   google:
     base: "https://www.google.co.uk/"
+
+---
+spring:
+  profiles: sit
+  google:
+    base: "https://www.google.co.uk/"

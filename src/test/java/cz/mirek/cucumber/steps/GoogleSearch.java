@@ -22,14 +22,14 @@ public class GoogleSearch {
     private String data;
 
     @When("^I hit search query \"([^\"]*)\"$")
-    public void i_hit_search_query(String query) throws Throwable {
+    public void i_hit_search_query(String query) {
         String url = baseUrl + query;
 
         data = restTemplate.getForObject(url, String.class);
     }
 
     @Then("^I want to get result$")
-    public void i_want_to_get_result() throws Throwable {
+    public void i_want_to_get_result() {
         assertThat(data, is(notNullValue()));
     }
 
