@@ -1,0 +1,9 @@
+server.port: 5555
+
+spring.profiles.active: dev
+
+---
+spring:
+  profiles: dev
+  google:
+    base: "https://www.google.co.uk/"
